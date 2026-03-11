@@ -6,6 +6,7 @@ const multer = require("multer")
 const nodemailer = require("nodemailer")
 const bcrypt = require("bcryptjs")
 const fs = require("fs")
+const path = require("path")
 
 const Images = require("./models/Images")
 const User = require("./models/User")
@@ -50,7 +51,7 @@ transporter.verify((error, success) => {
 })
 
 // CONTACT INFO FILE
-const CONTACT_FILE = "./contact.json"
+const CONTACT_FILE = path.join(__dirname, "contact.json")
 
 // Initialize contact file if not exists
 if (!fs.existsSync(CONTACT_FILE)) {
@@ -199,7 +200,7 @@ app.delete("/images/:id", async (req,res)=>{
     }
     
     // Delete file from uploads folder
-    const filePath = "./uploads/" + image.url
+    const filePath = path.join(__dirname, "uploads", image.url)
     if(fs.existsSync(filePath)){
       fs.unlinkSync(filePath)
     }
@@ -329,4 +330,5 @@ app.post("/booking", async (req,res)=>{
 app.listen(PORT,()=>{
   console.log(`Server running on port ${PORT}`)
 })
+
 
