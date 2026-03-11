@@ -1,16 +1,53 @@
-# React + Vite
+# PHOTO STUDIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional photography website with booking system built using React, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Portfolio Gallery** - Showcase photography work with categories
+- **Video Portfolio** - Display video work
+- **Booking System** - Event booking with email notifications
+- **User Authentication** - Login/Register with admin panel
+- **Dark/Light Mode** - Theme toggle
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, Vite, Framer Motion
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Email:** Nodemailer (Gmail)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install Dependencies
+
+```bash
+# Frontend
+npm install
+
+# Backend
+cd server
+npm install
+```
+
+### Run the App
+
+```bash
+# Terminal 1 - Frontend
+npm run dev
+
+# Terminal 2 - Backend
+cd server
+node server.js
+```
+
+### Environment Variables
+
+Create a `.env` file in the server folder with:
+- MongoDB connection string
+- Email credentials
+
+## License
+
+MIT
+
