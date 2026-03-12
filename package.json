@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "echo 'Frontend build skipped for backend deployment'",
+"build":"vite build",
     "start": "cd server && node server.js"
   },
   "dependencies": {
