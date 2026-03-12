@@ -112,9 +112,9 @@ function App() {
         } />
         <Route path="/booking" element={
           <Layout>
-            <PublicRoute>
+            <ProtectedRoute>
               <Booking />
-            </PublicRoute>
+            </ProtectedRoute>
           </Layout>
         } />
         <Route path="/contact" element={
