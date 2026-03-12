@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/photographyApp"
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "samrudhmshetty212004@gmail.com"
 const EMAIL_USER = process.env.EMAIL_USER || "samrudhmshetty212004@gmail.com"
-const EMAIL_PASS = process.env.EMAIL_PASS || "jqpq trbv tggz knjj"
+const EMAIL_PASS = process.env.EMAIL_PASS || "jjdl rrzz iiby qjlx"
 
 // CONNECT DATABASE
 mongoose.connect(MONGODB_URI)
